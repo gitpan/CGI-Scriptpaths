@@ -5,7 +5,7 @@ use warnings;
 use Exporter;
 
 use vars qw($VERSION @ISA @EXPORT_OK %EXPORT_TAGS);
-$VERSION = sprintf "%d.%02d", q$Revision: 1.2 $ =~ /(\d+)/g;
+$VERSION = sprintf "%d.%02d", q$Revision: 1.3 $ =~ /(\d+)/g;
 @ISA = qw/ Exporter /;
 @EXPORT_OK = qw(
 abs_cgibin
@@ -244,9 +244,11 @@ sub _script_abs_loc {
 
 __END__
 
+=pod
+
 =head1 NAME
 
-LEOCHARRE::CGI::Scriptpaths - find web relevant paths even without ENV set
+CGI::Scriptpaths - find web relevant paths even without ENV set
 
 =head1 SYNOPSIS
 
